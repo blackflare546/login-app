@@ -1,5 +1,4 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
 
 import {
   LandingContainer,
@@ -7,7 +6,7 @@ import {
   ButtonText,
 } from "../styles/landing.styled";
 
-const LandingScreen = () => {
+export default () => {
   return (
     <LandingContainer>
       <ButtonContainer>
@@ -20,5 +19,3 @@ const LandingScreen = () => {
     </LandingContainer>
   );
 };
-
-export default LandingScreen;
