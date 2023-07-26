@@ -1,15 +1,16 @@
 import React from "react";
-
 import {
   LandingContainer,
   ButtonContainer,
   ButtonText,
 } from "../styles/landing.styled";
 
+// Define the shape of the navigation object
 interface NavigationProps {
   navigate: (screen: string) => void;
 }
 
+// Define the shape of the props for the LandingScreen component
 interface LandingScreenProps {
   navigation: NavigationProps;
 }
@@ -23,7 +24,7 @@ const LandingScreen: React.FC<LandingScreenProps> = ({ navigation }) => {
         <ButtonText>Login</ButtonText>
       </ButtonContainer>
 
-      <ButtonContainer onPress={() => navigate("Signup")}>
+      <ButtonContainer>
         <ButtonText>Sign Up</ButtonText>
       </ButtonContainer>
     </LandingContainer>
