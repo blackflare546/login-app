@@ -5,8 +5,10 @@ import {
   ButtonContainer,
   ButtonText,
 } from "../styles/landing.styled";
+import { useNavigation } from "@react-navigation/native";
 
 export default () => {
+  const navigation = useNavigation();
   return (
     <LandingContainer>
       <ButtonContainer>
