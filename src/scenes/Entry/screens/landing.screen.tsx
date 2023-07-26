@@ -23,10 +23,6 @@ const LandingScreen: React.FC<LandingScreenProps> = ({ navigation }) => {
       <ButtonContainer onPress={() => navigate("Login")}>
         <ButtonText>Login</ButtonText>
       </ButtonContainer>
-
-      <ButtonContainer>
-        <ButtonText>Sign Up</ButtonText>
-      </ButtonContainer>
     </LandingContainer>
   );
 };

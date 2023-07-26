@@ -1,17 +1,18 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import {
-  DashboardScreen,
-  LandingScreen,
-  LoginScreen,
-} from "./src/scenes/Entry";
+import { LandingScreen, LoginScreen } from "./src/scenes/Entry";
+import { DashboardScreen } from "./src/scenes/Main";
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         <Stack.Screen name="Landing" component={LandingScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />

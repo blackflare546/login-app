@@ -65,6 +65,10 @@ const LoginScreen: React.FC<LandingScreenProps> = ({ navigation }) => {
 
   return (
     <LoginContainer>
+      <Text style={{ fontSize: 32, marginBottom: 10, fontWeight: "600" }}>
+        Login
+      </Text>
+
       <Controller
         control={control}
         rules={{
