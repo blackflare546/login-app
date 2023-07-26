@@ -18,11 +18,11 @@ export const LoginText = styled.Text`
 export const EmailInput = styled(TextInput).attrs(
     {placeholder: "Email"}
 )`
-    backgroundColor: #fff;
+    background-color: #fff;
     height: 50px;
     width: 100%;
     border-radius: 10px;
-    padding: 20px
+    padding: 10px
 `
 
 export const PassInput = styled(TextInput).attrs({
@@ -33,7 +33,7 @@ export const PassInput = styled(TextInput).attrs({
     height: 50px;
     width: 100%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
 `
 export const LoginButton = styled.TouchableOpacity`
     margin-top: 25px;
