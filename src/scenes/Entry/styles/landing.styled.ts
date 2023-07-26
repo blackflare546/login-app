@@ -5,17 +5,19 @@ export const LandingContainer = styled.View`
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 30px;
 `;
 
 export const ButtonContainer = styled.TouchableOpacity`
     background-color: #5DB075;
     border-radius: 10px;
-    width: 200px;
-    height: 50px;
+    width: 100%;
+    height: 60px;
     justify-content: center;
     align-items: center;
 `;
 
 export const ButtonText = styled.Text`
-    color: #fff
+    color: #fff;
+    font-size: 20px;
 `;

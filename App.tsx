@@ -1,25 +1,9 @@
 import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { LandingScreen } from "./src/scenes/Landing";
+import { LandingScreen, LoginScreen, SignupScreen } from "./src/scenes/Entry";
 
 const Stack = createNativeStackNavigator();
-
-const LoginScreen = () => {
-  return (
-    <View>
-      <Text>Login</Text>
-    </View>
-  );
-};
-
-const SignupScreen = () => {
-  return (
-    <View>
-      <Text>Signup</Text>
-    </View>
-  );
-};
 
 function App() {
   return (
