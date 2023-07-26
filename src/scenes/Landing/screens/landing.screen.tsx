@@ -5,19 +5,29 @@ import {
   ButtonContainer,
   ButtonText,
 } from "../styles/landing.styled";
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
-  const navigation = useNavigation();
+interface NavigationProps {
+  navigate: (screen: string) => void;
+}
+
+interface LandingScreenProps {
+  navigation: NavigationProps;
+}
+
+const LandingScreen: React.FC<LandingScreenProps> = ({ navigation }) => {
+  const { navigate } = navigation;
+
   return (
     <LandingContainer>
-      <ButtonContainer>
+      <ButtonContainer onPress={() => navigate("Login")}>
         <ButtonText>Login</ButtonText>
       </ButtonContainer>
 
-      <ButtonContainer>
+      <ButtonContainer onPress={() => navigate("Signup")}>
         <ButtonText>Sign Up</ButtonText>
       </ButtonContainer>
     </LandingContainer>
   );
 };
+
+export default LandingScreen;
