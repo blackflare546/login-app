@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "39ffd59e-c0bd-4216-b2a6-d05228aac67f"
+      }
+    },
+    "owner": "blackstacks"
   }
 }
